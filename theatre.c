@@ -58,8 +58,10 @@ int main()
 				}
 				break;
 			case 2:
+
 				do
 				{
+					showChart();
 					printf("Please select your row: ");
 					scanf("%d", &rowChoice);
 					printf("Please select seat: ");
@@ -96,9 +98,11 @@ int main()
 			case 3:
 				printf("Available Seats\n\n");
 				showChart();
+				printf("\nSeats taken: %d", seatsTaken);
+				printf("\nSeats left: %d", seatsLeft);
 				break;
 			case 4:
-				printf("Total Ticket Sales: %lf\n", total);
+				printf("Total Ticket Sales: $%.2lf\n", total);
 				break;
 			case 5:
 				printf("Quit\n");
