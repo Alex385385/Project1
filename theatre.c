@@ -41,6 +41,8 @@ int main()
 		}
 	}
 
+	showChart();
+
 	do
 	{
 		choice = showMenu();
@@ -76,12 +78,12 @@ int main()
 						seatsLeft = seatsLeft - answer;
 						seatsTaken = seatsTaken + answer;
 
-						if(answer == 1)
+						if(answer == 0)
 						{
 							printf("Your purchase has been confirmed\n");
 							seatingChart[rowChoice][columnChoice] = fullSeat;
 						}
-						else if(answer == 2)
+						else if(answer == 1)
 						{
 							printf("Would you like another seat? Enter(1 = Yes, 2 = No): ");
 							scanf("%d", &quit);
